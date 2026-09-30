@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:meu_perfil/widgets/info_card.dart';
+import 'package:meu_perfil/widgets/info.card.dart';
+import 'package:meu_perfil/widgets/info.colum.dart';
 
 //TELA DE PERFIL
 
@@ -34,13 +35,20 @@ class PerfilScreen extends StatelessWidget {
               // Primeiro texto da coluna
               //Nome do Usuario
               Text(
-                ' Samira Vieira',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                'Jonathan Viana',
+                style: TextStyle(
+                  fontSize: 24,
+                  color: const Color.fromARGB(255, 77, 208, 231),
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               // segundo texto da coluna
               Text(
-                'Desenvolvedora Mobile',
-                style: TextStyle(fontSize: 16, color: Colors.grey),
+                'Desenvolvedor Mobile',
+                style: TextStyle(
+                  fontSize: 16,
+                  color: const Color.fromARGB(255, 161, 18, 18),
+                ),
               ),
 
               SizedBox(height: 30),
@@ -64,7 +72,13 @@ class PerfilScreen extends StatelessWidget {
               //     ],
               //   ),
               // ),
-              const InfoCard(icon: Icons.email, text: 'Samira@email.com'),
+              const InfoCard(icon: Icons.email, text: 'jonathan.viana'),
+              SizedBox(height: 12),
+
+              const InfoCard(
+                icon: Icons.developer_board,
+                text: 'HTML,CSS,JS,PY',
+              ),
               SizedBox(height: 12),
 
               // // para mostrar o telefone
@@ -86,7 +100,7 @@ class PerfilScreen extends StatelessWidget {
               //     ],
               //   ),
               // ),
-              const InfoCard(icon: Icons.phone, text: '(11) 91125-5525'),
+              const InfoCard(icon: Icons.phone, text: '(11) 5851-5050'),
 
               SizedBox(height: 12),
 
@@ -112,6 +126,17 @@ class PerfilScreen extends StatelessWidget {
                   children: [Text('Flutter'), Text('Mobile'), Text('Firebase')],
                 ),
               ),
+
+              const Text(
+                'Task front end ',
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              ),
+
+              const InfoColumn(icon: Icons.device_hub, text: "HTML"),
+
+              const SizedBox(height: 15),
+
+              const InfoColumn(icon: Icons.device_hub, text: "CSS"),
 
               const SizedBox(height: 35),
               SizedBox(

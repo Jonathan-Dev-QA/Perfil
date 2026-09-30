@@ -1,14 +1,10 @@
-// WIDGETS RETILIZÁVEL DE INFORMAÇÃO
-
 import 'package:flutter/material.dart';
 
-class InfoCard extends StatelessWidget {
-  // icone que sera exibido
+class InfoColumn extends StatelessWidget {
   final IconData icon;
-
   final String text;
 
-  const InfoCard({super.key, required this.icon, required this.text});
+  const InfoColumn({super.key, required this.icon, required this.text});
 
   @override
   Widget build(BuildContext context) {
@@ -19,8 +15,13 @@ class InfoCard extends StatelessWidget {
         color: Colors.deepPurple.shade50,
         borderRadius: BorderRadius.circular(12),
       ),
-
-      child: Row(children: [Icon(icon), const SizedBox(width: 12), Text(text)]),
+      child: Column(
+        children: [
+          Icon(icon),
+          const SizedBox(width: 12, height: 12),
+          Text(text),
+        ],
+      ),
     );
   }
 }
