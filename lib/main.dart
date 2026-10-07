@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:meu_perfil/screens/catalogo_screen.dart';
+import 'package:meu_perfil/screens/fase_viva_screen.dart';
 import 'package:meu_perfil/screens/perfil_screen.dart';
 import 'package:meu_perfil/screens/preferences_screen.dart';
+import 'package:meu_perfil/screens/register_screen.dart';
 
 // import 'package:meu_perfil/screens/perfil_screen.dart';
 
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
       // Titulo da Aplicação
       title: 'MeuPerfil',
 
-      // Configuração do thema visual
+      // Configuração do thema visual1
       theme: ThemeData(
         // colorSheme define o conjunto de cores
         // fromSeed cia automaticamente um esquema de cores a partir de uma cor base
@@ -46,7 +48,7 @@ class MyApp extends StatelessWidget {
       // home: const CatalogScreen(),
 
       //Nova tela de prefrencias
-      home: const PreferencesScreen(),
+      home: const HomeScreen(),
     );
   }
 }
